@@ -4,15 +4,19 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>WORTSCHATZ</title>
+     <title>GRUß</title>
+     <link rel="shortcut icon" href="/res/bilder/logo.ico" type="image/x-icon">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     <link rel="stylesheet" href="/css/main.css">
+     <link rel="stylesheet" href="/css/degradiert.css">
+     <link rel="stylesheet" href="/css/footer.css">
 </head>
 
-<body>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-          <a class="navbar-brand" href="/">LERNE DEUTSCH</a>
+<body class="fahne">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+          <a class="navbar-brand" href="/">
+               <img src="/res/bilder/logo.ico" width="30" height="30" class="d-inline-block align-top font-weight-bold"
+                    alt="logo">LERNE DEUTSCH</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -20,13 +24,24 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
                <ul class="navbar-nav static">
                     <li class="nav-item">
-                         <a class="nav-link" href="../">START</a>
-                    </li>
-                    <li class="nav-item active">
-                         <a class="nav-link" href="">WORTSCHATZ<span class="sr-only">(current)</span></a>
+                         <a class="nav-link" href="/">START</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="/videos/">VIDEOS</a>
+                         <a class="nav-link" href="/wortschatz/"></a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              LERNEN
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="/lernen/zahlen/">zahlen</a>
+                              <a class="dropdown-item" href="/lernen/zahlen/">Zahlen</a>
+                              <a class="dropdown-item active" href="/lernen/gruß/">Gruß</a>
+                         </div>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="/videos">VIDEOS</a>
                     </li>
                     <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -34,13 +49,17 @@
                               ZUSÄTZLICHE RESSOURCEN
                          </a>
                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="https://www.dw.com/es/aprender-alem%C3%A1n/s-4639" target="_blank">Deutsche
-                                   Welle</a>
-                              <a class="dropdown-item" href="https://www.aprendealeman.com/blog/" target="_blank">Aprendealeman</a>
+                              <a class="dropdown-item" href="https://www.dw.com/es/aprender-alem%C3%A1n/s-4639"
+                                   target="_blank">Deutsche Welle</a>
+                              <a class="dropdown-item" href="https://www.aprendealeman.com/blog/"
+                                   target="_blank">Aprendealeman</a>
                               <a class="dropdown-item"
-                                   href="https://www.deutschakademie.de/online-deutschkurs/audio-course/" target="_blank">Deustschakademie</a>
-                              <a class="dropdown-item" href="https://www.gramatica-alemana.es/" target="_blank">Gramatica-alemana.es</a>
-                              <a class="dropdown-item" href="https://www.alemanista.com/" target="_blank">El Alemanista</a>
+                                   href="https://www.deutschakademie.de/online-deutschkurs/audio-course/"
+                                   target="_blank">Deustschakademie</a>
+                              <a class="dropdown-item" href="https://www.gramatica-alemana.es/"
+                                   target="_blank">Gramatica-alemana.es</a>
+                              <a class="dropdown-item" href="https://www.alemanista.com/" target="_blank">El
+                                   Alemanista</a>
                          </div>
                     </li>
                </ul>
@@ -48,22 +67,21 @@
      </nav>
 
      <div class="container">
-          <h1 class="text-center text-white m-4">DEUTSCHES WORTSCHATZ</h1>
-          <audio src="mi-archivo-de-audio.mp3">Hola</audio>
+          <h1 class="text-center text-white m-4">DEUTSCHES WORTSCHATZ (GRUß)</h1>
 
           <div class="table-responsive">
-               <table class="table table-striped text-white">
+               <table class="table table-bordered table-hover table-striped">
                     <thead>
                          <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">WORT</th>
-                              <th scope="col">BEDEUTUNG</th>
-                              <th scope="col">AUSSPRACHE</th>
+                              <th scope="col" class="text-center">#</th>
+                              <th scope="col" class="text-center">WORT</th>
+                              <th scope="col" class="text-center">BEDEUTUNG</th>
+                              <th scope="col" class="text-center">AUSSPRACHE</th>
                          </tr>
                     </thead>
                     <tbody>
                          <tr>
-                              <th scope="row">1</th>
+                              <th scope="row" class="text-center">1</th>
                               <td>Hallo</td>
                               <td>Hola</td>
                               <td>
@@ -72,7 +90,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">2</th>
+                              <th scope="row" class="text-center">2</th>
                               <td>Guten Morgen</td>
                               <td>Buenos días (Hasta las 8:59)</td>
                               <td>
@@ -81,7 +99,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">3</th>
+                              <th scope="row" class="text-center">3</th>
                               <td>Guten Tag</td>
                               <td>Buenos días (entre 9:00 y 18:00)</td>
                               <td>
@@ -90,7 +108,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">4</th>
+                              <th scope="row" class="text-center">4</th>
                               <td>Guten Abend</td>
                               <td>Buenos noches (Después de las 18:00)</td>
                               <td>
@@ -99,7 +117,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">5</th>
+                              <th scope="row" class="text-center">5</th>
                               <td>Gute Nacht</td>
                               <td>Buenos noches (Al irse a acostar)</td>
                               <td>
@@ -108,7 +126,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">6</th>
+                              <th scope="row" class="text-center">6</th>
                               <td>Mittag</td>
                               <td>Medio día</td>
                               <td>
@@ -117,7 +135,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">7</th>
+                              <th scope="row" class="text-center">7</th>
                               <td>Wie geht es dir?</td>
                               <td>¿Cómo estás?</td>
                               <td>
@@ -126,7 +144,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">8</th>
+                              <th scope="row" class="text-center">8</th>
                               <td>Wie geht es ihnen?</td>
                               <td>¿Cómo está usted?</td>
                               <td>
@@ -135,7 +153,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">9</th>
+                              <th scope="row" class="text-center">9</th>
                               <td>Wie geht's?</td>
                               <td>¿Qué tal?</td>
                               <td>
@@ -144,7 +162,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">10</th>
+                              <th scope="row" class="text-center">10</th>
                               <td>Danke</td>
                               <td>Gracias</td>
                               <td>
@@ -153,7 +171,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">11</th>
+                              <th scope="row" class="text-center">11</th>
                               <td>Tschüs</td>
                               <td>Adiós</td>
                               <td>
@@ -162,7 +180,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">12</th>
+                              <th scope="row" class="text-center">12</th>
                               <td>Auf Wiedersehen</td>
                               <td>Adiós (Formal)</td>
                               <td>
@@ -171,7 +189,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">13</th>
+                              <th scope="row" class="text-center">13</th>
                               <td>Bis Bald</td>
                               <td>Hasta Pronto</td>
                               <td>
@@ -180,7 +198,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">14</th>
+                              <th scope="row" class="text-center">14</th>
                               <td>Bis Dann</td>
                               <td>Hasta Entonces</td>
                               <td>
@@ -189,7 +207,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">15</th>
+                              <th scope="row" class="text-center">15</th>
                               <td>Bis Nachher</td>
                               <td>Hasta Luego</td>
                               <td>
@@ -198,7 +216,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">16</th>
+                              <th scope="row" class="text-center">16</th>
                               <td>Main name ist</td>
                               <td>Mi nombre es</td>
                               <td>
@@ -207,7 +225,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">17</th>
+                              <th scope="row" class="text-center">17</th>
                               <td>Ich bin</td>
                               <td>Yo soy</td>
                               <td>
@@ -216,7 +234,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">18</th>
+                              <th scope="row" class="text-center">18</th>
                               <td>Ich heisse</td>
                               <td>Me llamo</td>
                               <td>
@@ -225,7 +243,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">19</th>
+                              <th scope="row" class="text-center">19</th>
                               <td>Wie ist Dein Name?</td>
                               <td>¿Cómo es tu nombre?</td>
                               <td>
@@ -234,7 +252,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">20</th>
+                              <th scope="row" class="text-center">20</th>
                               <td>Wie ist Ihr Name?</td>
                               <td>¿Cómo es su nombre? (Formal)</td>
                               <td>
@@ -243,7 +261,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">21</th>
+                              <th scope="row" class="text-center">21</th>
                               <td>Wie heisst Du?</td>
                               <td>¿Cómo te llamas?</td>
                               <td>
@@ -252,7 +270,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">22</th>
+                              <th scope="row" class="text-center">22</th>
                               <td>Wie heissen Sie?</td>
                               <td>¿Cómo se llama usted?(Formal)</td>
                               <td>
@@ -261,7 +279,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">23</th>
+                              <th scope="row" class="text-center">23</th>
                               <td>Wer bist Du?</td>
                               <td>¿Quién eres?</td>
                               <td>
@@ -270,7 +288,7 @@
                               </td>
                          </tr>
                          <tr>
-                              <th scope="row">24</th>
+                              <th scope="row" class="text-center">24</th>
                               <td>Wer sind Sie?</td>
                               <td>¿Quién es usted? (Formal)</td>
                               <td>
@@ -282,7 +300,11 @@
                     </tbody>
                </table>
           </div>
+     </div>
 
+     <div class="footer bg-primary">
+          <p class="text-center text-white p-0 m-0"><a class="text-white" href="/">Lerne Deutsch</a> &copy; 2020 | Alle
+               Rechte vorbehalten</p>
      </div>
 
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
